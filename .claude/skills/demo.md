@@ -42,6 +42,27 @@ Determine:
 | API | Request/response flow diagram | Screenshot |
 | Any | Social card for Open Graph | — |
 
+### Prerequisites
+
+Check for required tools before recording. Install what's missing:
+
+| Tool | Needed For | Install |
+|------|-----------|---------|
+| `asciinema` | All terminal recordings | `pip install asciinema` |
+| `agg` | GIF output | `cargo install --git https://github.com/asciinema/agg` |
+| `svg-term-cli` | SVG output | `npm install -g svg-term-cli` |
+| `playwright` | Screenshots, social cards | `pip install playwright && playwright install chromium` |
+| `mmdc` | Mermaid diagrams | `npm install -g @mermaid-js/mermaid-cli` |
+
+Check availability before starting:
+```bash
+echo "asciinema: $(which asciinema || echo 'MISSING')"
+echo "agg: $(which agg || echo 'MISSING')"
+echo "svg-term: $(which svg-term || echo 'MISSING')"
+```
+
+If critical tools are missing, output the demo script and install instructions — don't block the user.
+
 ### Step 3: Generate the Demo
 
 #### Terminal Recording (CLI tools, MCP servers)
@@ -53,6 +74,15 @@ Determine:
    - Include `sleep 0.3-0.5` between commands for readability
    - Use `echo` section headers sparingly: `echo "→ Running health check..."`
    - No errors. Test before recording.
+   - **For tools with dual output modes** (pretty CLI + JSON): show BOTH in the demo. First the human-readable output (the "wow"), then the structured JSON output (proves it's agent-native). This demonstrates agentic-first design. Example sequence:
+     ```bash
+     echo "→ Human-friendly output:"
+     aad checkup --min-severity warning
+     sleep 1
+     echo ""
+     echo "→ Structured agent output:"
+     aad checkup --json --fields severity,summary,fix | head -20
+     ```
 
 2. **Record**:
    ```bash

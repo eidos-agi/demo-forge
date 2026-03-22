@@ -30,7 +30,7 @@ For each demo asset found:
 | Size | GIF ≤5MB? PNG ≤1MB? |
 | Duration | Recording ≤30 seconds? |
 | Real output | Does the demo script run real code, or is output hardcoded? |
-| Currency | Does the demo reflect the current version of the tool? Check if demo-script.sh still runs cleanly. |
+| Currency | Does the demo reflect the current version of the tool? Check if demo-script.sh still runs cleanly. Also: compare any version strings in demo-script.sh against `project.version` in pyproject.toml — if they differ, WARN as stale. |
 | Hero feature | Does the demo show the most compelling capability, not just `--help`? |
 | Format | Is the format optimal? (SVG > GIF for terminal, PNG for screenshots) |
 

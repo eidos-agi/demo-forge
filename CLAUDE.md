@@ -14,6 +14,7 @@ The founder shouldn't be making GIFs. The agent should.
 |-------|-------------|
 | `/demo` | Generate demo content — terminal GIFs, SVGs, screenshots, diagrams, social cards |
 | `/demo-audit` | Assess existing demo content quality and freshness |
+| `/demo-clean` | Remove intermediate files (.cast) and update .gitignore |
 
 ## Guardrails
 
@@ -23,5 +24,6 @@ The founder shouldn't be making GIFs. The agent should.
 
 ## Related Forges
 
+- **forge-forge** — meta-forge for creating and managing forges
 - **foss-forge** — open-source standards and marketing. `/foss-demo` delegates here.
 - **test-forge** — testing standards and test generation

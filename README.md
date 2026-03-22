@@ -14,6 +14,7 @@ demo-forge reads your project, identifies the hero feature, writes a demo script
 |-------|------|
 | `/demo` | Auto-generate demo content — terminal GIFs/SVGs, screenshots, architecture diagrams, social cards |
 | `/demo-audit` | Audit existing demo quality — freshness, file size, positioning, hero feature coverage |
+| `/demo-clean` | Remove intermediate files (.cast) and update .gitignore |
 
 ## Supported Formats
 
@@ -43,9 +44,10 @@ Then run `/demo` in that project.
 
 ## Part of the Forge Ecosystem
 
+- [forge-forge](https://github.com/eidos-agi/forge-forge) — the meta-forge (create and manage forges)
 - [foss-forge](https://github.com/eidos-agi/foss-forge) — FOSS standards and marketing
 - [demo-forge](https://github.com/eidos-agi/demo-forge) — this repo
-- test-forge — testing standards
+- [test-forge](https://github.com/eidos-agi/test-forge) — testing standards
 
 ## License
 
