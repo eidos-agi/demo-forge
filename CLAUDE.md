@@ -26,4 +26,5 @@ The founder shouldn't be making GIFs. The agent should.
 
 - **forge-forge** — meta-forge for creating and managing forges
 - **foss-forge** — open-source standards and marketing. `/foss-demo` delegates here.
+- **security-forge** — security auditing and agentic threat modeling
 - **test-forge** — testing standards and test generation

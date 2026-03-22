@@ -47,6 +47,7 @@ Then run `/demo` in that project.
 - [forge-forge](https://github.com/eidos-agi/forge-forge) — the meta-forge (create and manage forges)
 - [foss-forge](https://github.com/eidos-agi/foss-forge) — FOSS standards and marketing
 - [demo-forge](https://github.com/eidos-agi/demo-forge) — this repo
+- [security-forge](https://github.com/eidos-agi/security-forge) — security auditing and agentic threat modeling
 - [test-forge](https://github.com/eidos-agi/test-forge) — testing standards
 
 ## License
