@@ -1,0 +1,15 @@
+{
+  "id": "2a8fe98d-a89f-4e1d-a06b-12ec5221499a",
+  "version": "0.1.0",
+  "projectName": "terminal-recording-2026",
+  "created": "2026-03-22",
+  "phase": "research",
+  "transitions": [
+    {
+      "phase": "research",
+      "date": "2026-03-22"
+    }
+  ],
+  "question": "What are the best tools and techniques for recording terminal demos (GIFs, SVGs, videos) for open-source CLI tool READMEs in 2026?",
+  "context": "demo-forge is an Eidos AGI tool for generating demo content for open-source software. The current toolchain is asciinema → agg (GIF) or svg-term-cli (SVG). But we're hitting issues: asciinema doesn't work well in non-interactive/CI environments, recordings hang for slow commands, and the toolchain requires multiple tools (asciinema + agg or svg-term).\n\nWe need to research:\n1. Modern alternatives to asciinema (2025-2026 tools)\n2. SVG vs GIF vs WebM/MP4 — what renders best on GitHub README, PyPI, npm\n3. Programmatic approaches (no interactive recording needed — generate from script)\n4. Tools that work in CI (GitHub Actions) for automated demo generation\n5. Rich/terminal-to-image approaches (capture styled terminal output as PNG/SVG)\n6. What top repos actually use for their demos (patterns from 10k+ star repos)\n\nThe goal is to find the most reliable, CI-friendly, visually compelling approach for CLI tool demos that agents can generate autonomously without an interactive terminal."
+}
